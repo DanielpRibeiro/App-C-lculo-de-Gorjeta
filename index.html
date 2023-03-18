@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- representar caracteres -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- autor -->
+    <meta name="Daniel" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Gorgetas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <main>
+        <div class="container1">
+            <h1>CALCULADORA DE GORJETAS</h1>
+        </div>
+        <div>
+            <!-- Dentro de Label tag for > serve para dar mais dinamica ao usuario
+            Sendo possivel dar uma pequena ação quando o campo label for acionado -->
+            <form id="formulario">
+                    <label for="valor">
+                        <p>Quanto ficou a conta? </p>
+                    </label>
+                    <p>
+                        <input type="number" placeholder="R$ Insira o valor" name="valor" id="valor">
+                    </p>
+                    <label for="servico" id="valor">
+                        <p>Como foi nosso serviço?</p>
+                    </label>
+                    <p>
+                        <select name="service" id="servico">
+                            <!-- disable para primeira opçõa nao ser selecionada -->
+                            <option disabled selected>Escolha uma opção</option>
+                            <option value="30">30% - Incrível</option>
+                            <option value="20">20% - Bom</option>
+                            <option value="10">10% - Razoavél</option>
+                            <option value="5">5% - Aceitavél</option>
+                            <option value="0">0% - Ruim</option>
+                        </select>
+                    </p>
+                    <label for="peoplee">
+                        <p>Quantas pessoas vão dividir a conta?</p>
+                    </label>
+                    <!--  -->
+                    
+                    <!--  -->
+                    <p>
+                        <input type="number" placeholder="1" name="peoplee" id="pessoas"> Pessoa(s)
+                    </p>
+                    <button id="bt" type="submit" >Calcular</button>
+                    <p id="final">
+                        Valor total de Gorjeta: R$ <span id="gorjetaTotal"></span>
+                    </p>
+            </form>
+        </div>
+        
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

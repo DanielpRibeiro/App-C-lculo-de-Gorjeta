@@ -1,0 +1,55 @@
+/* Essas propriedades fazem com que o body seja exibido como um elemento
+   flexível e centralizado tanto na horizontal quanto na vertical,
+   e a tag main pode ter o estilo desejado. */
+
+*{
+    font-family: Helvetica, sans-serif;
+}
+   body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+main{
+    border: 2px solid  green;
+    border-radius: 20px;
+    width: 512px;
+    height: 712px;
+    padding: 20px;
+    /*  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*  */
+    text-align: left;
+}
+
+h1{
+    font-size: 30px;
+}
+p{
+    font-size: 25px;
+}
+input{
+    margin: 2px 0 10px;
+    width: 92%;
+    padding: 15px;
+    font-size: 20px;
+}
+select{
+    margin: 2px 0 10px;
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+
+}
+button{
+    /* margin: 2px 0 10px; */
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+}
